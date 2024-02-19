@@ -10,19 +10,17 @@ This project is designed to leverage cutting-edge technology in artificial intel
 </p>
 
 ## Demo video
-
 video in x tweter
 
+<hr>
 #### Backend Engine
-<hr>
 Developed in Python, the backend engine is the powerhouse of the project. It employs Nvidia TensorRT, a high-performance deep learning inference platform.
-
-#### Frontend Interface:
 <hr>
+#### Frontend Interface
+
 To ensure a user-friendly experience, the frontend is built with Angular. This modern framework provides a responsive and intuitive interface.
-
-#### Middleware Layer: 
 <hr>
+#### Middleware Layer
 Bridging the frontend and the backend, the middleware layer is implemented using Spring Boot with Java. This component is crucial for orchestrating command-line commands to the Python-based AI engine.
 
 ## A BIT OF IA TOOLS INSIDE THIS PROJECT
@@ -35,24 +33,21 @@ Note: since the compile onnx and tensorRT engine files are a big ones and can’
 ```
 https://drive.google.com/drive/u/0/folders/1ky-Om3OGPZiVl8v1hu1Zmt5jKCmlKIHM
 ```
-
-#### Models use for video and image inference (onnx and TensorRT engine files)
 <hr>
+#### Models use for video and image inference (onnx and TensorRT engine files)
 Model: Resnet18 <br>
 onnx file: https://drive.google.com/file/d/1T0Ci8rr4ePjWdkoe8uygXccqiWrfR02P/view?usp=drive_link <br>
 TensorRT engine file: https://drive.google.com/file/d/16DMZ_BPcFZ1pWsekhyj8APjhG3V9VEk0/view?usp=drive_link 
 
-#### Models use for generative IA chat bot based on Question-and-Answer system (onnx and TensorRT engine files)
 <hr>
+#### Models use for generative IA chat bot based on Question-and-Answer system (onnx and TensorRT engine files)
 Model: distilbert-base-uncased-distilled-squad <br>
 onnx file: https://drive.google.com/file/d/1upBRUy5Q5o5czaRqA1y_-0NPwdS9onR7/view?usp=drive_link <br>
 TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88kIInN20/view?usp=drive_link
 
 ## Compile section
-
-### resnet18
 <hr>
-
+### resnet18
 1. For compiling the onnx file for resnet18 you can use the script that is located at the root of the project “exportResnetModelToOnnx.py”
 
 2. For the tensorRT engine file, you will have to go to your tensorRT installation folder , in my case is C:\TensorRT-8.6.1.6\bin open a cmd shell inside the bin folder and add the onnx file generated on the step before, the run the following command
@@ -60,10 +55,8 @@ TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88
 ```
 trtexec --onnx=[path_to_your_onnx_model] --saveEngine=[path_to_save_trt_engine_file]
 ```
-
-#### distilbert-base-uncased-distilled-squad
 <hr>
-
+### distilbert-base-uncased-distilled-squad
 1. you can download the onnx file from 
 ```
 https://huggingface.co/philschmid/distilbert-onnx
@@ -81,10 +74,11 @@ The steps could look too much but is very straightforward environment setup (as 
 
 I’m going to provided two different installation guides, both of them are simple to reproduce
 
-General need dependencies and tools
+General need dependencies and tools/
 
-### Dependencies needed for option one and two
 <hr>
+### Dependencies needed for option one and two
+
 ```
 pip install transformers
 pip install torch
@@ -99,10 +93,11 @@ pip install pyyaml
 pip install subprocess.run
 ```
 
-<hr>
+
 #### Install ffmpeg 
-<hr>
+
 1. clone the git repository
+
 ```
 (git clone https://git.ffmpeg.org/ffmpeg.git)
 ```
