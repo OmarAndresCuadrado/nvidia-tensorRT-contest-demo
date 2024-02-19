@@ -12,14 +12,13 @@ This project is designed to leverage cutting-edge technology in artificial intel
 ## Demo video
 video in x tweter
 
-<hr>
 #### Backend Engine
 Developed in Python, the backend engine is the powerhouse of the project. It employs Nvidia TensorRT, a high-performance deep learning inference platform.
-<hr>
+
 #### Frontend Interface
 
 To ensure a user-friendly experience, the frontend is built with Angular. This modern framework provides a responsive and intuitive interface.
-<hr>
+
 #### Middleware Layer
 Bridging the frontend and the backend, the middleware layer is implemented using Spring Boot with Java. This component is crucial for orchestrating command-line commands to the Python-based AI engine.
 
@@ -33,20 +32,20 @@ Note: since the compile onnx and tensorRT engine files are a big ones and can’
 ```
 https://drive.google.com/drive/u/0/folders/1ky-Om3OGPZiVl8v1hu1Zmt5jKCmlKIHM
 ```
-<hr>
+
 #### Models use for video and image inference (onnx and TensorRT engine files)
 Model: Resnet18 <br>
 onnx file: https://drive.google.com/file/d/1T0Ci8rr4ePjWdkoe8uygXccqiWrfR02P/view?usp=drive_link <br>
 TensorRT engine file: https://drive.google.com/file/d/16DMZ_BPcFZ1pWsekhyj8APjhG3V9VEk0/view?usp=drive_link 
 
-<hr>
+
 #### Models use for generative IA chat bot based on Question-and-Answer system (onnx and TensorRT engine files)
 Model: distilbert-base-uncased-distilled-squad <br>
 onnx file: https://drive.google.com/file/d/1upBRUy5Q5o5czaRqA1y_-0NPwdS9onR7/view?usp=drive_link <br>
 TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88kIInN20/view?usp=drive_link
 
 ## Compile section
-<hr>
+
 ### resnet18
 1. For compiling the onnx file for resnet18 you can use the script that is located at the root of the project “exportResnetModelToOnnx.py”
 
@@ -55,7 +54,7 @@ TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88
 ```
 trtexec --onnx=[path_to_your_onnx_model] --saveEngine=[path_to_save_trt_engine_file]
 ```
-<hr>
+
 ### distilbert-base-uncased-distilled-squad
 1. you can download the onnx file from 
 ```
@@ -76,7 +75,7 @@ I’m going to provided two different installation guides, both of them are simp
 
 General need dependencies and tools/
 
-<hr>
+
 ### Dependencies needed for option one and two
 
 ```
@@ -99,7 +98,7 @@ pip install subprocess.run
 1. clone the git repository
 
 ```
-(git clone https://git.ffmpeg.org/ffmpeg.git)
+git clone https://git.ffmpeg.org/ffmpeg.git
 ```
 
 2. add this to your path variables on your windows machine
@@ -107,10 +106,10 @@ pip install subprocess.run
 C:\Users\USUARIO\Documents\DevTools\ffmpeg-master-latest-win64-gpl\bin\
 ```
 remember to change to path to your download location
-<hr>
+
 
 ### Dependencies needed for option two
-<hr>
+
 
 Install java 8 JDK (follow this tutorial)
 Install Maven (follow this tutorial)
@@ -122,12 +121,12 @@ Install Angular (just run the following command once you have installed node)
 before to use any python IA program, you have to change the original path and comment some lines from the IA python programs
 
 #### for image inference IA program
-<hr>
+
 
 go to {your-download-project-folder}/ DeepLearning/Resnet18VImageferenceTensorRT
 
 1. Comment the following lines (you can find this lines at the end of the script)
-<hr>
+
 ```
 #directory_path_angular = 'C:/Users/USUARIO/Documents/NvidiaContestDemo/frontend/nvidia-contents/src/assets'
 ```
@@ -142,7 +141,7 @@ go to {your-download-project-folder}/ DeepLearning/Resnet18VImageferenceTensorRT
 ```
 
 2. Setup your workspace path
-<hr>
+
 
 On the def main(): you are going to set up in the following lines your workspace
 
@@ -154,7 +153,7 @@ image_path = 'C:/Users/USUARIO/Documents/DeepLearning/YOLO/OriginalImages'
 ```
 
 Note: In my case “'C:/Users/USUARIO/Documents” is where my project is located, so, in your case you have to change this path with your project download location
-<hr>
+
 
 Before to run the program move some images (.jpg or .jpeg) to the '/DeepLearning/YOLO/OriginalImages'
 
@@ -166,11 +165,11 @@ Open a cmd in the root path and type “python imageInferenceTensorTR.py” (wit
 The result images will appear in the '/DeepLearning/YOLO/ProcessedImages'
 
 ### for video inference IA program
-<hr>
+
 go to {your-download-project-folder}/DeepLearning/Resnet18VideoInferenceTensorRT
 
 1. Comment the following lines (you can find this lines at the end of the script)
-<hr>
+
 ```
  #output_video_angular = 'C:/Users/USUARIO/Documents/NvidiaContestDemo/frontend/nvidia-contents/src/assets'
 ```
@@ -189,7 +188,7 @@ go to {your-download-project-folder}/DeepLearning/Resnet18VideoInferenceTensorRT
 ```
 
 2. Setup your workspace path
-<hr>
+
 On the def main(): you are going to set up in the following lines your workspace
 
 ```
@@ -214,12 +213,12 @@ The result images will appear in the '/DeepLearning/ YOLOVIDEO/'
 
 
 ### for generative chat bot IA program
-<hr>
+
 go to
 {your-download-project-folder}/DeepLearning/GeneartiveIaChatTensorRT
 
 1. Setup your workspace path
-<hr>
+
 ```
 filename = f"C:/Users/USUARIO/Documents/DeepLearning/questionAnswer/Responses/chat_response.txt"
 ```
@@ -228,7 +227,7 @@ Note: In my case “'C:/Users/USUARIO/Documents” is where my project is locate
 
 
 2. Run the following program from the root of the project (where imageInferenceTensorTR.py is located) 
-<hr>
+
 
 Open a cmd in the root path and type “python GenerativeIaQuestionAndAnswer.py  “Colombia is a wonderful country” “what is Colombia?” ” (the program need to have two initial argument , the first one is for the context and the second one is for the question, both of them are closed by double quotes
 
