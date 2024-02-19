@@ -1,1 +1,1 @@
-# nvidia-tensorRT-contest-demo
+# nvidia tensorRT contest demo
