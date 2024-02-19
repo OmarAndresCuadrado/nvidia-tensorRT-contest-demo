@@ -1,5 +1,6 @@
 # 🚀 Nvidia tensorRT contest demo 🚀
 
+## OverView
 This project is designed to leverage cutting-edge technology in artificial intelligence (AI) to provide high-performance image and video inference, as well as generative AI for text chat. At its core, the backend engine utilizes Python and integrates Nvidia's TensorRT technology, enhancing efficiency and speed to meet the demands of real-time processing.
 
 
@@ -8,7 +9,7 @@ This project is designed to leverage cutting-edge technology in artificial intel
 </p>
 
 
-##### Backend Engine
+#### Backend Engine
 
 Developed in Python, the backend engine is the powerhouse of the project. It employs Nvidia TensorRT, a high-performance deep learning inference platform.
 
@@ -31,21 +32,21 @@ Note: since the compile onnx and tensorRT engine files are a big ones and can’
 https://drive.google.com/drive/u/0/folders/1ky-Om3OGPZiVl8v1hu1Zmt5jKCmlKIHM
 ```
 
-##### Models use for video and image inference (onnx and TensorRT engine files)
+#### Models use for video and image inference (onnx and TensorRT engine files)
 
 Model: Resnet18
 onnx file: https://drive.google.com/file/d/1T0Ci8rr4ePjWdkoe8uygXccqiWrfR02P/view?usp=drive_link
 TensorRT engine file: https://drive.google.com/file/d/16DMZ_BPcFZ1pWsekhyj8APjhG3V9VEk0/view?usp=drive_link 
 
-##### Models use for generative IA chat bot based on Question-and-Answer system (onnx and TensorRT engine files)
+#### Models use for generative IA chat bot based on Question-and-Answer system (onnx and TensorRT engine files)
 
 Model: distilbert-base-uncased-distilled-squad
 onnx file: https://drive.google.com/file/d/1upBRUy5Q5o5czaRqA1y_-0NPwdS9onR7/view?usp=drive_link
 TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88kIInN20/view?usp=drive_link
 
-### Compile section
+## Compile section
 
-##### resnet18
+#### resnet18
 
 1. For compiling the onnx file for resnet18 you can use the script that is located at the root of the project “exportResnetModelToOnnx.py”
 
@@ -55,7 +56,7 @@ TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88
 trtexec --onnx=[path_to_your_onnx_model] --saveEngine=[path_to_save_trt_engine_file]
 ```
 
-##### distilbert-base-uncased-distilled-squad
+#### distilbert-base-uncased-distilled-squad
 
 1. you can download the onnx file from 
 ```
