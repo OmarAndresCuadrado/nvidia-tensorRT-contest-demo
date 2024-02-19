@@ -1,15 +1,18 @@
 # 🚀 Nvidia tensorRT contest demo 🚀
 
-## OverView
-This project is designed to leverage cutting-edge technology in artificial intelligence (AI) to provide high-performance image and video inference, as well as generative AI for text chat. At its core, the backend engine utilizes Python and integrates Nvidia's TensorRT technology, enhancing efficiency and speed to meet the demands of real-time processing.
+---
+## OverView 👁️
+**This project is designed** to leverage cutting-edge technology in artificial intelligence (AI) to provide high-performance image and video inference, as well as generative AI for text chat. At its core, the backend engine utilizes Python and integrates Nvidia's TensorRT technology, enhancing efficiency and speed to meet the demands of real-time processing.
 
-## Diagram project workflow
+---
+## Diagram project workflow ⚒️
 
 <p align="center">
 <img src="https://github.com/OmarAndresCuadrado/nvidia-tensorRT-contest-demo/blob/master/overViewDesignDemo.png"  align="center">
 </p>
 
-## Demo video
+---
+## Demo video 📹
 video in x tweter
 
 #### Backend Engine
@@ -22,7 +25,7 @@ To ensure a user-friendly experience, the frontend is built with Angular. This m
 #### Middleware Layer
 Bridging the frontend and the backend, the middleware layer is implemented using Spring Boot with Java. This component is crucial for orchestrating command-line commands to the Python-based AI engine.
 
-## A BIT OF IA TOOLS INSIDE THIS PROJECT
+## A BIT OF IA TOOLS INSIDE THIS PROJECT 🤖
 
 This project used as pretrained models for video and image inference from pytorch Resnet18, on the other hand a pretrained model distilbert-base-uncased-distilled-squad
 was use in order to create the generative IA chat bot based on Question-and-Answer system, these projects have been optimizing by using Nvidia's TensorRT technology; you can check the section (Compile section) how to compile onnx files and tensorRT engines.
@@ -44,7 +47,7 @@ Model: distilbert-base-uncased-distilled-squad <br>
 onnx file: https://drive.google.com/file/d/1upBRUy5Q5o5czaRqA1y_-0NPwdS9onR7/view?usp=drive_link <br>
 TensorRT engine file: https://drive.google.com/file/d/1zwpfNaCVdDa8kSQFlJPnnDY88kIInN20/view?usp=drive_link
 
-## Compile section
+## Compile section ⚙️
 
 ### resnet18
 1. For compiling the onnx file for resnet18 you can use the script that is located at the root of the project “exportResnetModelToOnnx.py”
@@ -67,9 +70,9 @@ https://huggingface.co/philschmid/distilbert-onnx
 trtexec --onnx=distilbert-base-cased-distilled-squad.onnx --saveEngine=distilbert-base-cased-distilled-squad.trt --explicitBatch --minShapes=input_ids:1x128,attention_mask:1x128 --optShapes=input_ids:4x128,attention_mask:4x128 --maxShapes=input_ids:8x128,attention_mask:8x128 --workspace=2048 --fp16
 ```
 
-## Installation Guide
+## Installation Guide ⚙️
 
-The steps could look too much but is very straightforward environment setup (as soon as I finish this guide, I test my self-following this guide successfully <3)
+The steps could look too much but is very straightforward environment setup I just want to make sure to make really detail guide (PS. as soon as I finish this guide, I test my self-following this guide successfully 🙂)
 
 I’m going to provided two different installation guides, both of them are simple to reproduce
 
@@ -116,11 +119,11 @@ Install Maven (follow this tutorial)
 Install Nodejs (go to its official website here and download the install)
 Install Angular (just run the following command once you have installed node)
 
-### Option One only uses python IA programs from a cmd console
+### 🐍 Option One only uses python IA programs from a cmd console 🐍
 
 before to use any python IA program, you have to change the original path and comment some lines from the IA python programs
 
-#### for image inference IA program
+#### For image inference IA program
 
 
 go to {your-download-project-folder}/ DeepLearning/Resnet18VImageferenceTensorRT
@@ -164,7 +167,7 @@ Open a cmd in the root path and type “python imageInferenceTensorTR.py” (wit
 
 The result images will appear in the '/DeepLearning/YOLO/ProcessedImages'
 
-### for video inference IA program
+### For video inference IA program
 
 go to {your-download-project-folder}/DeepLearning/Resnet18VideoInferenceTensorRT
 
@@ -212,7 +215,7 @@ Open a cmd in the root path and type 'python videoInferenceTensorTR.py  "videoNa
 The result images will appear in the '/DeepLearning/ YOLOVIDEO/'
 
 
-### for generative chat bot IA program
+### For generative chat bot IA program
 
 go to
 {your-download-project-folder}/DeepLearning/GeneartiveIaChatTensorRT
@@ -233,7 +236,7 @@ Open a cmd in the root path and type “python GenerativeIaQuestionAndAnswer.py 
 
 The response will appears on the cmd at the end and inside the {your-download-project-folder}/DeepLearning/GeneartiveIaChatTensorRT/Responses/reponse.txt file
 
-### Option Two full installation
+### Option Two full installation 🌐
 
 if you want to use the wonderful UI running on angular and spring in order to communicate with the IA programs from python, we need to set up a couple of simple things (trust me is really fast)
 
@@ -241,7 +244,7 @@ todo todo todo
 todo todo todo
 todo todo todo
 
-### General Resources
+### General Resources 📚
 
 https://drive.google.com/drive/u/0/folders/1ky-Om3OGPZiVl8v1hu1Zmt5jKCmlKIHM
 
