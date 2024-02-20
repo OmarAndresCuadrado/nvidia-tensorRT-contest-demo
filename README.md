@@ -32,8 +32,9 @@ Bridging the frontend and the backend, the middleware layer is implemented using
 This project used as pretrained models for video and image inference from pytorch Resnet18, on the other hand a pretrained model distilbert-base-uncased-distilled-squad
 was use in order to create the generative IA chat bot based on Question-and-Answer system, these projects have been optimizing by using Nvidia's TensorRT technology; you can check the section (Compile section) how to compile onnx files and tensorRT engines.
 
-Note: since the compile onnx and tensorRT engine files are a big ones and can’t add to github, you can download them from this google drive (here you can find everything related to this wonderful project)
+**Note: since the compile onnx and tensorRT engine files are a big ones (specially for the generative ia chat bot) I can’t add them to github,so, you can download them from this google drive and then move them to the project (here you can find everything related to this wonderful project)** <br>
 
+**for the the generative ia chat bot you will place those onnx and trt file in its root folder <br>
 ```
 https://drive.google.com/drive/u/0/folders/1ky-Om3OGPZiVl8v1hu1Zmt5jKCmlKIHM
 ```

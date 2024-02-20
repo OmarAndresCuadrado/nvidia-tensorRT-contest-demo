@@ -1,0 +1,14 @@
+Colombia has a diverse ecosystems support a wide range of amphibians and reptiles, including the golden poison frog, one of the most toxic creatures on Earth, and the majestic Magdalena river turtle. The skies above are aflutter with over 3,000 species of butterflies, adding a burst of color to the Colombian landscape. This incredible biodiversity is underpinned by Colombia's commitment to conservation, with numerous protected areas and national parks established to safeguard these natural treasures for future generations.
+
+which is one of the most toxic creatures on Earth?
+
+Colombia's rivers and coastal areas are just as teeming with life; they are home to the American crocodile, the pink river dolphin, and countless species of turtles and fish. The Andean region is not only a haven for birds but also for unique mammals like the spectacled bear and the mountain tapir, which navigate the rugged terrain.
+
+which spicies lives on rivers and coastal areas from Colombia?
+
+
+NVIDIA TensorRT is a high-performance deep learning inference engine designed to deliver accelerated computing power to applications. It optimizes neural network models to run efficiently on NVIDIA GPUs, catering specifically to environments where computational resources are limited and performance is critical, such as edge devices in IoT, autonomous vehicles, and real-time recommendation systems. By leveraging TensorRT, developers can achieve significantly reduced latency and increased throughput for their deep learning inference tasks compared to running unoptimized models.
+
+what is nvidia tensorRT?
+
+whats nvidia tensorRT optimizes ?

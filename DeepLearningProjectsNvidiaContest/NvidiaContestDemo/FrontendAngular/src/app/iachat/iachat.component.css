@@ -1,0 +1,33 @@
+textarea {
+    width: 100%;
+    height: 300px;
+  }
+
+.stunning-art {
+    font-size: 48px; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the font bold */
+    text-transform: capitalize; /* Capitalizes the text */
+    color: #198754; /* Adjust the color as needed */
+    font-family: Arial, sans-serif; /* A common, bold-able font */
+  }
+
+  .stunning-art-small {
+    font-weight: bold; /* Makes the font bold */
+    text-transform: capitalize; /* Capitalizes the text */
+    color: #198754; /* Adjust the color as needed */
+    font-family: Arial, sans-serif; /* A common, bold-able font */
+  }
+
+  .spinner-container {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .large-spinner {
+    width: 6rem;  /* or any size you want */
+    height: 6rem; /* must be the same as width to maintain the circle shape */
+    border-width: 0.4em; /* thickness of the spinner border */
+  }

@@ -1,0 +1,49 @@
+<form [formGroup]="chatBotForm" (ngSubmit)="sendChatBotMessage()">
+    <div class="form-group" style="padding-top: 15px;">
+        <div class="input-container">
+            <textarea type="context" class="form-control" formControlName="context"
+                placeholder="Set an initial input for givin a context, better context equal to better responses :)">
+            </textarea>
+        </div>
+    </div>
+    <div class="form-group" style="padding-top: 15px;">
+        <div class="input-container">
+            <input type="question" class="form-control" id="question" formControlName="question"
+                placeholder="Ask your question">
+        </div>
+    </div>
+    <div class="row" style="padding-top: 30px;">
+        <div class="col-12 text-center" style="padding-top: 15px;">
+            <button class="btn btn-success btn-block" type="submit">Send message</button>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top: 40px;">
+        <div class="col-12">
+            <h3 class="stunning-art">History of IA chats</h3>
+        </div>
+    </div>
+
+    <div *ngIf="isLoading" class="spinner-container">
+        <div class="spinner-border text-success large-spinner" role="status">
+        </div>
+      </div>
+      
+
+    <div *ngFor="let chat of historicalChats" class="row" style="padding-top: 40px;">
+        <div class="col-12 text-justi">
+            <div class="card text-white bg-dark" style="background-color: #198754 !important;">
+                <div class="card-body">
+                    <h3 class="card-text text-center">Context Provided</h3>
+                    <p class="card-text" style="padding-top: 10px;  text-align: justify; text-justify: inter-word;">{{chat.context}}</p>
+                    <h3 class="card-text text-center">Proposed Question</h3>
+                    <p class="card-text" style="padding-top: 10px;  text-align: justify; text-justify: inter-word;">{{chat.question}}</p>
+                    <h3 class="card-text text-center">Response</h3>
+                    <p class="card-text" style="padding-top: 10px;  text-align: justify; text-justify: inter-word;">{{chat.chatResponse}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div style="padding-bottom: 300px;"></div>

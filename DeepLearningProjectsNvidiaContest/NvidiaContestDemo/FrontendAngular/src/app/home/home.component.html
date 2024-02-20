@@ -1,0 +1,78 @@
+<div class="row" *ngIf="!isImageModuleActivated && !isVideoModuleActivated  && !isIaChatActivated">
+    <div class="col-12 padding-top-personal-more">
+        <div>
+            <h3 class="stunning-art">
+                No Module is selected please choose one
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isImageModuleActivated || isVideoModuleActivated || isIaChatActivated" class="col-12 padding-top-personal-more"></div>
+
+<div *ngIf="isImageModuleActivated" class="row">
+    <div class="col-12">
+        <h3 class="stunning-art">Image recognition module selected</h3>
+    </div>
+</div>
+
+<div *ngIf="isVideoModuleActivated" class="row">
+    <div class="col-12">
+        <h3 class="stunning-art">Video recognition module selected</h3>
+    </div>
+</div>
+
+
+<div *ngIf="isIaChatActivated" class="row">
+    <div class="col-12">
+        <h3 class="stunning-art">Generative IA chat module selected</h3>
+    </div>
+</div>
+
+<div class="row padding-top-personal-more-buttons">
+    <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg" (click)="showImageModule()"> Image Inference Recognition Module
+        </button>
+    </div>
+
+    <div class="col-1"></div>
+
+    <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg" (click)="showVideoModule()"> Video Inference Module
+            recognition</button>
+    </div>
+
+    <div class="col-1"></div>
+
+    <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg" (click)="showIaChatModule()"> Generative IA chat Module </button>
+    </div>
+</div>
+
+<div class="row padding-top-personal-more-buttons"></div>
+
+<div *ngIf="isImageModuleActivated">
+    <div class="row">
+        <div class="col-12">
+            <app-image-recognition></app-image-recognition>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="isVideoModuleActivated">
+    <div class="row">
+        <div class="col-12">
+            <app-video-recognition></app-video-recognition>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="isIaChatActivated">
+    <div class="row">
+        <div class="col-12">
+            <app-iachat></app-iachat>
+        </div>
+    </div>
+</div>

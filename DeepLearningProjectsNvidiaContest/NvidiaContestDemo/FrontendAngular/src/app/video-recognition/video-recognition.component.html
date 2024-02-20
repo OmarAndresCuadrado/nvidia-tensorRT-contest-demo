@@ -1,0 +1,46 @@
+<div class="padding-top-personal"></div>
+<div class="card text-bg-dark">
+    <div class="card-body text-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <h3 class="stunning-art">Chose your video</h3>
+                    <div class="padding-top-buttons"></div>
+                    <div class="padding-top-buttons"></div>
+                    <input (change)="selectVideo($event)" class="form-control" type="file" id="formFileMultiple"
+                        multiple>
+                </div>
+                <div class="padding-top-buttons"></div>
+                <button type="button" class="btn btn-success" (click)="uploadVideo()">Upload video</button>
+            </div>
+        </div>
+        <div class="padding-top-buttons"></div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" (click)="triggerNvidiaVideo()">Trigger Nvidia tensorRT
+                    magic</button>
+            </div>
+        </div>
+    </div>
+    <div class="padding-top-personal"></div>
+</div>
+
+<div class="padding-top-personal"></div>
+<div class="text-center">
+    <h3 class="stunning-art">Video Recognition</h3>
+</div>
+<div class="padding-top-personal"></div>
+<div *ngIf="videosArray.length > 0 " class="card text-bg-dark">
+    <div class="card-body">
+        <div class="row text-center" *ngFor="let videoName of videosArray.slice().reverse()">
+            <div class="col-12">
+                <video controls>
+                    <source src="assets/{{videoName}}">
+                </video>
+            </div>
+            <div class="padding-top-personal"></div>
+        </div>
+    </div>
+</div>
+
+<div class="padding-top-personal-alot"></div>
