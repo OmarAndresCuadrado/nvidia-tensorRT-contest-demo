@@ -1,6 +1,12 @@
 # 🚀 Nvidia tensorRT contest demo 🚀
 
 ---
+## 📧 Contact Information 📧
+
+Email: omarcuadradodev@gmail.com <br>
+Phone: +57 3133547367 <br>
+
+---
 ## OverView 👁️
 **This project is designed** to leverage cutting-edge technology in artificial intelligence (AI) to provide high-performance image and video inference, as well as generative AI for text chat. At its core, the backend engine utilizes Python and integrates Nvidia's TensorRT technology, enhancing efficiency and speed to meet the demands of real-time processing.
 
@@ -34,7 +40,7 @@ was use in order to create the generative IA chat bot based on Question-and-Answ
 
 **Note: since the compile onnx and tensorRT engine files are a big ones (specially for the generative ia chat bot) I can’t add them to github,so, you can download them from this google drive and then move them to the project (here you can find everything related to this wonderful project)** <br>
 
-**for the the generative ia chat bot you will place those onnx and trt file in its root folder <br>
+**for the the generative ia chat bot you will place those onnx and trt file in its root folder** <br>
 ```
 https://drive.google.com/drive/u/0/folders/1ky-Om3OGPZiVl8v1hu1Zmt5jKCmlKIHM
 ```
