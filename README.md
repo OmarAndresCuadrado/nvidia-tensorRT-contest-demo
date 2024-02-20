@@ -79,11 +79,13 @@ trtexec --onnx=distilbert-base-cased-distilled-squad.onnx --saveEngine=distilber
 
 ➡️ https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#downloading ⬅️
 
+**I have use the following ones for this demo**
+
 **TensorRT:** 8.6.1.6
 
 **Cuda:** 12.0
 
-**Python:** = 3.11.5
+**Python:** 3.11.5
 
 
 The steps could look too much but **is very straightforward environment setup I just want to make sure to make a really detail guide** (PS. as soon as I finish this guide, I test my self-following this guide successfully 🙂)
