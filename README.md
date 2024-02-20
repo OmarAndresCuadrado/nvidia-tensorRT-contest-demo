@@ -19,8 +19,8 @@ Phone: +57 3133547367 <br>
 
 ---
 ## Demo video 📹
-video in x tweter
 
+https://youtu.be/wP6THYITd2A
 ---
 #### Backend Engine
 Developed in Python, the backend engine is the powerhouse of the project. It employs **Nvidia TensorRT, a high-performance deep learning inference platform**.
