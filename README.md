@@ -162,7 +162,7 @@ The result images will appear in the **"/ProcessedImages"**
 - The result video will appear in the **root of the project**
 
 ---
-### 💬 For generative chat bot IA program 💬
+### 🤖💬 For generative chat bot IA program 💬🤖
 
 go to
 **/GeneartiveIaChatTensorRT**
@@ -186,25 +186,49 @@ In order to run successfully the entire application you will need to install the
 - Nodejs 
 - Angular
 
+**you would have to open 2 different cmd 1 for the frontend and other one for the backend**
+
 1. Compile and run Frontend
-	- Go to the Angular project folder **/NvidiaContestDemo/FrontendAngular**
+	- Go to the root Angular project folder **/NvidiaContestDemo/FrontendAngular**
 	- Open a cmd bash
 	- Run the command **npm install**
 	- Run the angular project **ng serve**
 	
 2. Compile and run Backend
-	- Go to the Spring project folder **/SpringJavaMiddelWare/demo-for-nvidia-contest-4090**
+	- Go to the root Spring project folder **/SpringJavaMiddelWare/demo-for-nvidia-contest-4090**
 	- Open a cmd bash
 	- Run the command **mvn clean install**
 	- Run the spring project **mvn spring-boot:run**
 
 3. Go to your favorite browser and go to angular host **http://localhost:4200/**
+
+---
+## 📝 Spring Rest API endpoints available 📝
+
+**These are the following available endpoints from the spring API**
+
+**The host will be http://localhost**<br>
+**The port 4090**<br>
+**Example request:** http://localhost:4090/nvidia/api/original/images<br>
+
+| Type | Endpoint | Description |
+| ------ | ------ | ------ |
+| Get | /trigger/nvidia/tensorrt | Executes the trigger to proccess images with the ia python scrypt for image
+| Get | /trigger/nvidia/tensorrt/video | Executes the trigger to proccess videos with the ia python scrypt for video
+| Get | /original/images| Return the images wihtout processing from windows folder
+| Get | /processed/imagese | Return the images processed from windows and angular folders
+| Get | /videos |  Get the videos from windows folder
+| Post | /images | Upload images to windows and angular folders
+| Post | /video | Upload videos to windows and angular folders
+| Post | /chat/message | Executes the trigger to proccess images with the generative ia python scrypt for chat bot
+
 ---
 ## 🖥️ Computer Specifications 🖥️
 
 **CPU:** AMD Ryzen 7 7800X3D 8-Core Processo <br>
 **GPU:** NVIDIA GeForce RTX 4070 Ti <br>
 **RAM:** 32GB 3200 hz <br>
+**OS:** Windows 11 pro **version** 22H2<br>
 
 ## General project Resources  📚
 
