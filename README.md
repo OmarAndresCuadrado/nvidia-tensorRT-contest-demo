@@ -72,8 +72,19 @@ https://huggingface.co/philschmid/distilbert-onnx
 ```
 trtexec --onnx=distilbert-base-cased-distilled-squad.onnx --saveEngine=distilbert-base-cased-distilled-squad.trt --explicitBatch --minShapes=input_ids:1x128,attention_mask:1x128 --optShapes=input_ids:4x128,attention_mask:4x128 --maxShapes=input_ids:8x128,attention_mask:8x128 --workspace=2048 --fp16
 ```
-
+---
 ## Installation Guide ⚙️
+
+### Important note: make sure to download a compatible versions between TensorRT and Cuda you can follow this guide to identify 
+
+➡️ https://docs.nvidia.com/deeplearning/tensorrt/install-guide/index.html#downloading ⬅️
+
+**TensorRT:** 8.6.1.6
+
+**Cuda:** 12.0
+
+**Python:** = 3.11.5
+
 
 The steps could look too much but **is very straightforward environment setup I just want to make sure to make a really detail guide** (PS. as soon as I finish this guide, I test my self-following this guide successfully 🙂)
 
@@ -115,10 +126,10 @@ C:\Users\USUARIO\Documents\DevTools\ffmpeg-master-latest-win64-gpl\bin\
 ---
 ### Dependencies needed for option two 
 
-Install java 8 JDK follow this tutorial >> https://www.youtube.com/watch?v=ClcHrcNXP9g  <br>
-Install Maven follow this tutorial >> https://www.youtube.com/watch?v=YTvlb6eny_0 <br>
-Install Nodejs (go to its official website here and download the install) https://nodejs.org/dist/v21.6.2/node-v21.6.2-x64.msi   <br>
-Install Angular (just run the following command once you have installed node) **npm install -g @angular/cli** <br>
+**Install java 8 JDK** follow this tutorial ➡️ https://www.youtube.com/watch?v=ClcHrcNXP9g  <br>
+**Install Maven** follow this tutorial ➡️ https://www.youtube.com/watch?v=YTvlb6eny_0 <br>
+**Install Nodejs** (go to its official website here and download the install) ➡️ https://nodejs.org/dist/v21.6.2/node-v21.6.2-x64.msi <br>
+**Install Angular** (just run the following command once you have installed node) ➡️ **npm install -g @angular/cli** <br>
 
 ### 1️⃣ Option One only uses 🐍python🐍 IA programs from a cmd console 1️⃣
 
@@ -138,15 +149,15 @@ The result images will appear in the **"/ProcessedImages"**
 ---
 ### 🎞️ For video inference IA program 🎞️
 
-** project root ** :  **/DeepLearningProjectsNvidiaContest/PythonEngineTensorRT/Resnet18VImageferenceTensorRT**
+**project root** :  **/DeepLearningProjectsNvidiaContest/PythonEngineTensorRT/Resnet18VImageferenceTensorRT**
 
 1. Add some video (.mp4) to run the program  to the **"/OriginalVideo"**
 
 2. Run the following program from the root of the project (where **imageInferenceTensorTR.py is** located) 
 
-Open a cmd in the root path and type **python videoInferenceTensorTR.py  "videoName.mp4"** (the video name has to be closed between quotes)
+3. Open a cmd in the root path and type **python videoInferenceTensorTR.py  "videoName.mp4"** (the video name has to be closed between quotes)
 
-The result video will appear in the **root of the project**
+- The result video will appear in the **root of the project**
 
 ---
 ### 💬 For generative chat bot IA program 💬
@@ -156,11 +167,12 @@ go to
 
 1. Run the following program from the root of the project (where **imageInferenceTensorTR.py** is located) 
 
-Open a cmd in the root path and type **"python GenerativeIaQuestionAndAnswer.py  "Colombia is a wonderful country" "what is Colombia?"** (the program need to have two initial argument , the first one is for the context and the second one is for the question, both of them are closed by double quotes
+2. Open a cmd in the root path and type **"python GenerativeIaQuestionAndAnswer.py  "Colombia is a wonderful country" "what is Colombia?"** (the program need to have two initial argument , the first one is for the context and the second one is for the question, both of them are closed by double quotes
 
-The response will appears on the cmd at the end and inside the **/Responses/reponse.txt** file
+- The response will appears on the cmd at the end and inside the **/Responses/reponse.txt** file
+
 ---
-### Option Two full installation 2️⃣
+### 2️⃣ Option Two full installation 2️⃣
 
 If you want to use the wonderful UI running on angular and spring in order to communicate with the IA programs from python, we need to set up a couple of simple things (trust me is really fast)
 
@@ -188,9 +200,9 @@ In order to run successfully the entire application you will need to install the
 ---
 ## 🖥️ Computer Specifications 🖥️
 
-CPU: AMD Ryzen 7 7800X3D 8-Core Processo
-GPU: NVIDIA GeForce RTX 4070 Ti
-RAM: 32 3200 hz
+**CPU:** AMD Ryzen 7 7800X3D 8-Core Processo <br>
+**GPU:** NVIDIA GeForce RTX 4070 Ti <br>
+**RAM:** 32GB 3200 hz <br>
 
 ## General project Resources  📚
 
