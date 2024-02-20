@@ -163,6 +163,7 @@ The result images will appear in the **"/ProcessedImages"**
 
 ---
 ### 🤖💬 For generative chat bot IA program 💬🤖
+**project root** :  **/DeepLearningProjectsNvidiaContest/PythonEngineTensorRT/GeneartiveIaChatTensorRT**
 
 go to
 **/GeneartiveIaChatTensorRT**
@@ -207,9 +208,9 @@ In order to run successfully the entire application you will need to install the
 
 **These are the following available endpoints from the spring API**
 
-**The host will be http://localhost**<br>
-**The port 4090**<br>
-**Example request:** http://localhost:4090/nvidia/api/original/images<br>
+**Server Host:** http://localhost <br>
+**Port:** 4090 <br>
+**Example request:** http://localhost:4090/nvidia/api/original/images <br>
 
 | Type | Endpoint | Description |
 | ------ | ------ | ------ |
